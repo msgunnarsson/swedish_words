@@ -1,0 +1,107 @@
+/* Write your CSS! */
+
+
+html {
+  	background: url(/images/bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+
+}
+
+body {
+	font: normal 300 1em/1.5 "museo",serif;
+	color: #fff;
+	letter-spacing: 0.07em;
+	max-width: 1024px;
+	margin: 0 auto;
+	position: relative;
+	height: 100%;
+	min-height: 1000px;
+}
+
+h1 { font-size: 3em; line-height: 1; font-weight: 900; margin: 0; }
+h2 { font-size: 1.5em; margin: 0 0 10px; }
+p { margin: 0; }
+a { color: #fff; text-decoration: none; }
+a:focus, a:hover { color: #FFF000; }
+
+.swedish {
+	font-size: 6em;
+	font-weight: 900;
+	margin-bottom: 5px;
+	letter-spacing: 0.06em;
+}
+
+.description {
+	color: rgb(182, 181, 181);
+	font-weight: 300;
+	font-style: italic;
+	margin-bottom: 30px;
+}
+
+.english { font-size: 2em; font-weight: 900; letter-spacing: 0.08em; margin-bottom: 10px; }
+
+.content_box {
+	margin: 0 70px;
+	background: rgba(0, 0, 0, .8);
+	padding: 5% 12%;
+	text-align: center;
+	border-radius: 10px;	
+}
+
+header .content_box {
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	margin-bottom: 50px;
+}
+
+footer .content_box {
+	position: absolute;
+	bottom: 0;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+footer p { font-size: 0.8em; }
+
+@media screen and (max-width: 989px) {   /* Styles for tablet */
+
+body { font-size: 90%; min-height: 928px; }
+
+}
+
+
+@media screen and (max-width : 550px) { /* Styles for mobile */
+
+body { min-height: 680px; }
+body, footer .content_box {  }
+.content_box { padding-top: 10%; margin: 0 20px; }
+
+h1 { font-size: 150%; }
+.swedish { font-size: 280%; margin-bottom: 15px; }
+.english { font-size: 160%; margin-bottom: 25px; }
+.description { margin-bottom: 15px; }
+.content_box { background: rgba(0, 0, 0, 0.9); }
+
+header .content_box { margin-bottom: 15px; }
+footer .content_box, header .content_box { padding-top: 5%; }
+
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+
+body {
+	font-size: 0.5em;
+}
+  /* Don't forget your Retina CSS! */
+  
+
+}
