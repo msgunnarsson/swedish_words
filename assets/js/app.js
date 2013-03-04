@@ -37,7 +37,7 @@ $(document).on('ready',function(){
 		nextIndex = Math.floor(Math.random()*wantedPages.length);
 	} while (nextIndex == prevIndex);
 
-	prevLink.text(wantedPages[prevIndex].title).attr('href',wantedPages[prevIndex].url);
-	nextLink.text(wantedPages[nextIndex].title).attr('href',wantedPages[nextIndex].url);
+	prevLink.text(wantedPages[prevIndex].title).attr('href',wantedPages[prevIndex].url.slice(1));
+	nextLink.text(wantedPages[nextIndex].title).attr('href',wantedPages[nextIndex].url.slice(1));
 
 });
