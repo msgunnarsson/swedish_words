@@ -1,6 +1,3 @@
-/* Write your CSS! */
-
-
 html {
   	background: url(../images/bg.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
@@ -8,13 +5,13 @@ html {
 	-o-background-size: cover;
 	background-size: cover;
 	height: 100%;
-
 }
 
 body {
-	font: normal 300 1em/1.5 "museo",serif;
+	font: normal 300 1em/1.5 "museo", serif;
 	color: #fff;
 	letter-spacing: 0.07em;
+	height: 100%;
 	max-width: 1024px;
 	margin: 0 auto;
 	position: relative;
@@ -25,14 +22,25 @@ body {
 h1 { font-size: 3em; line-height: 1; font-weight: 900; margin: 0; }
 h2 { font-size: 1.5em; margin: 0 0 10px; }
 p { margin: 0; }
-a { color: #fff; text-decoration: none; }
-a:focus, a:hover { color: #FFF000; }
+a { color: #fff; 
+	text-decoration: none; 
+	-webkit-transition: color 0.5s;
+	transition: color 0.5s;
+}
+a:focus, a:hover { color: #FFD900; }
 
 .swedish {
 	font-size: 6em;
 	font-weight: 900;
 	margin-bottom: 5px;
 	letter-spacing: 0.06em;
+}
+
+.english { 
+	font-size: 2em; 
+	font-weight: 900; 
+	letter-spacing: 0.08em; 
+	margin-bottom: 10px; 
 }
 
 .description {
@@ -42,7 +50,13 @@ a:focus, a:hover { color: #FFF000; }
 	margin-bottom: 30px;
 }
 
-.english { font-size: 2em; font-weight: 900; letter-spacing: 0.08em; margin-bottom: 10px; }
+.description_group p {
+	margin-bottom: 0;
+}
+
+.content { 
+	position: relative;
+}
 
 .content_box {
 	margin: 0 70px;
@@ -52,7 +66,7 @@ a:focus, a:hover { color: #FFF000; }
 	border-radius: 10px;	
 }
 
-header .content_box {
+#page_header.content_box {
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 10px;
@@ -60,7 +74,7 @@ header .content_box {
 	margin-bottom: 50px;
 }
 
-footer .content_box {
+#page_footer.content_box {
 	position: absolute;
 	bottom: 0;
 	border-top-left-radius: 10px;
@@ -69,18 +83,131 @@ footer .content_box {
 	border-bottom-left-radius: 0;
 }
 
-footer p { font-size: 0.8em; }
+#page_footer p { 
+	font-size: 0.8em;
+}
+
+
+.navigation a {
+	display: table-cell;
+	background: rgba(0, 0, 0, .8);
+	border-radius: 150px;
+	text-align: center;
+	vertical-align: middle;
+	height: 150px;
+	width: 140px;
+	padding: 0 5px;
+	font-size: 1.3em;
+	font-weight: 500;
+	line-height: 1.1;
+	-webkit-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
+.navigation a:focus, .navigation a:hover {
+	color: #fff;
+	background: rgba(69, 69, 69, .9);
+}
+
+.next, .prev {
+	position: absolute;
+	top: 320px;
+}
+
+.prev {
+	left: -15%;
+}
+
+.next {
+	right: -15%;
+}
+
+.pro_tips {
+	background: #fff;
+	border-radius: 11px;
+	width: 23px;
+	height: 22px;
+	position: absolute;
+	top: 19px;
+	right: 25px;
+	color: #000;
+	font-weight: 900;
+	letter-spacing: 0;
+	padding-top: 1px;
+}
+
+#pro_tips_box {
+	background: rgba(225, 225, 225, .9);
+	color: #3D3D3D;
+	text-align: left;
+	position: absolute;
+	padding: 3% 4%;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin: 0 250px;
+	border-radius: 0;
+	opacity: 0;
+	-webkit-transition: opacity border-radius 0.5s;
+	-webkit-transition: border-radius 0.8s;
+	transition: opacity 0.5s;
+	transition: border-radius 0.8s;
+}
+.pro_tips:hover {
+	color: #000;
+}
+
+.pro_tips:hover + #pro_tips_box {
+	opacity : 1;
+	border-radius: 20px 0;
+}
+
+#player {
+	border: 0;
+	background: #fff url(../images/play.png) no-repeat 3px -1px;
+	width: 23px;
+	height: 22px;
+	border-radius: 11px;
+	position: absolute;
+	top: 55px;
+	right: 25px;
+	text-indent: -9999px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#player.playing {
+	background-position: 2px -26px;
+}
+
+#audio {
+	position: absolute;
+	top: 19px;
+	right: 8%;
+
+}
+
+
 
 @media screen and (max-width: 989px) {   /* Styles for tablet */
 
-body { font-size: 90%; min-height: 928px; }
+body { font-size: 85%; min-height: 940px; }
+h1 { font-size: 200%; }
+.swedish { font-size: 450%;  }
 
+.navigation { position: relative; margin: 30px 70px; }
+.navigation a { width: 110px; height: 120px; }
+.next { right: 18%; top: 0; }
+.prev { left: 18%; top: 0; }
+
+
+.pro_tips { padding-top: 2px; }
 }
 
 
 @media screen and (max-width : 550px) { /* Styles for mobile */
 
-body { min-height: 680px; }
+body { min-height: 900px; }
 body, footer .content_box {  }
 .content_box { padding-top: 10%; margin: 0 20px; }
 
@@ -89,6 +216,13 @@ h1 { font-size: 150%; }
 .english { font-size: 160%; margin-bottom: 25px; }
 .description { margin-bottom: 15px; }
 .content_box { background: rgba(0, 0, 0, 0.9); }
+#page_header.content_box { padding-top: 5%; }
+
+.navigation { margin: 20px 30px; }
+.navigation a { margin-top: 40%; font-size: 1.2em; }
+.next { right: 5%; }
+.prev { left: 5%; }
+
 
 header .content_box { margin-bottom: 15px; }
 footer .content_box, header .content_box { padding-top: 5%; }
@@ -98,10 +232,6 @@ footer .content_box, header .content_box { padding-top: 5%; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
 
-body {
-	font-size: 0.5em;
-}
   /* Don't forget your Retina CSS! */
   
-
 }

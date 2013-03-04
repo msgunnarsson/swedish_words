@@ -1,0 +1,15 @@
+<script>
+	var pages = [
+		{% for page in site.pages %}
+			{
+				title: '{{ page.title }}',
+			    url: '{{ page.url }}'
+			},
+		{% endfor %}
+	];
+</script>
+
+<nav class="navigation">
+	<div class="prev"><a href="#"></a></div>
+	<div class="next"><a href="#"></a></div>
+</nav>
