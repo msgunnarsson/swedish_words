@@ -24,9 +24,12 @@ $(document).on('ready',function(){
 	var nextLink = $('.navigation>.next>a');
 	var prevIndex, nextIndex;
 
+	// strip out just the file name to match stored URL
+	var path = '/'+location.pathname.split('/').pop();
+
 	// remove index page and current page from pages
 	$.each(pages,function(index,element){
-		if ((element.url != '/index.html') && (element.url != location.pathname)) {
+		if ((element.url != '/index.html') && (element.url != path)) {
 			wantedPages.push(element);
 		}
 	});
