@@ -8,19 +8,18 @@ html {
 }
 
 body {
-	font: normal 300 1em/1.5 "museo", serif;
+	font: normal 300 1.1em/1.6 "museo", serif;
 	color: #fff;
 	letter-spacing: 0.07em;
 	height: 100%;
-	max-width: 1024px;
+	max-width: 1000px;
 	margin: 0 auto;
 	position: relative;
-	height: 100%;
-	min-height: 1000px;
+	min-height: 1160px;
 }
 
-h1 { font-size: 3em; line-height: 1; font-weight: 900; margin: 0; }
-h2 { font-size: 1.5em; margin: 0 0 10px; }
+h1 { font-size: 2.4em; line-height: 1; margin: 0; }
+h2 { font-size: 1.5em; line-height: 1; margin: 0 0 10px; }
 p { margin: 0; }
 a { color: #fff; 
 	text-decoration: none; 
@@ -29,19 +28,39 @@ a { color: #fff;
 }
 a:focus, a:hover { color: #FFD900; }
 
+.content { 
+	position: relative;
+}
+
+.content_box {
+	margin: 0 100px;
+	background: rgba(0, 0, 0, .8);
+	padding: 5% 12%;
+	text-align: center;
+	border-radius: 10px;	
+}
+
 .swedish {
-	font-size: 6em;
+	font-size: 5em;
 	font-weight: 900;
-	margin-bottom: 5px;
+	margin-bottom: 30px;
 	letter-spacing: 0.06em;
 }
 
+.pron {
+	color: rgb(182, 181, 181);
+	font-style: italic;
+	margin-bottom: 30px;
+}
+
 .english { 
-	font-size: 2em; 
+	font-size: 1.8em; 
 	font-weight: 900; 
 	letter-spacing: 0.08em; 
 	margin-bottom: 10px; 
 }
+
+
 
 .description {
 	color: rgb(182, 181, 181);
@@ -50,21 +69,19 @@ a:focus, a:hover { color: #FFD900; }
 	margin-bottom: 30px;
 }
 
-.description_group p {
-	margin-bottom: 0;
+.description_group>h2 {
+	font-size: 1.1em;
+	text-transform: uppercase;
+	margin-bottom: 20px;
 }
 
-.content { 
-	position: relative;
+.sentence {
+	font-style: normal;
+	margin-bottom: 15px;
 }
 
-.content_box {
-	margin: 0 70px;
-	background: rgba(0, 0, 0, .8);
-	padding: 5% 12%;
-	text-align: center;
-	border-radius: 10px;	
-}
+
+
 
 #page_header.content_box {
 	border-top-left-radius: 0px;
@@ -97,7 +114,7 @@ a:focus, a:hover { color: #FFD900; }
 	height: 150px;
 	width: 140px;
 	padding: 0 5px;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	font-weight: 500;
 	line-height: 1.1;
 	-webkit-transition: all 0.6s;
@@ -188,6 +205,10 @@ a:focus, a:hover { color: #FFD900; }
 }
 
 
+@media screen and (max-width: 1360px) {   /* Styles for tablet */
+.next { right: -10%; }
+.prev { left: -10%; }
+
 
 @media screen and (max-width: 989px) {   /* Styles for tablet */
 
@@ -195,7 +216,7 @@ body { font-size: 85%; min-height: 940px; }
 h1 { font-size: 200%; }
 .swedish { font-size: 450%;  }
 
-.navigation { position: relative; margin: 30px 70px; }
+.navigation { position: relative; margin: 30px 100px; }
 .navigation a { width: 110px; height: 120px; }
 .next { right: 18%; top: 0; }
 .prev { left: 18%; top: 0; }
