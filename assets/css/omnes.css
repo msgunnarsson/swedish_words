@@ -1,0 +1,18 @@
+body {
+	font-family: 'omnes-pro', sans-serif;
+}
+
+h1, h2 {
+	font-weight: 500;
+}
+.swedish, {
+	font-weight: 700;
+}
+
+.english {
+	font-weight: 600;
+}
+
+.navigation a {
+	font-weight: 300;
+}

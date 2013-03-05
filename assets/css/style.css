@@ -1,5 +1,5 @@
 html {
-  	background: url(../images/bg.jpg) no-repeat center center fixed; 
+  	background: #fff no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -8,13 +8,12 @@ html {
 }
 
 body {
-	font: normal 300 1.1em/1.6 "museo", serif;
+	font: normal 1.1em/1.6 sans-serif;
 	color: #fff;
-	letter-spacing: 0.07em;
+	position: relative;
+	margin: 0 auto;
 	height: 100%;
 	max-width: 1000px;
-	margin: 0 auto;
-	position: relative;
 	min-height: 1160px;
 }
 
@@ -42,9 +41,7 @@ a:focus, a:hover { color: #FFD900; }
 
 .swedish {
 	font-size: 5em;
-	font-weight: 900;
 	margin-bottom: 30px;
-	letter-spacing: 0.06em;
 }
 
 .pron {
@@ -55,24 +52,19 @@ a:focus, a:hover { color: #FFD900; }
 
 .english { 
 	font-size: 1.8em; 
-	font-weight: 900; 
-	letter-spacing: 0.08em; 
 	margin-bottom: 10px; 
-}
-
-
-
-.description {
-	color: rgb(182, 181, 181);
-	font-weight: 300;
-	font-style: italic;
-	margin-bottom: 30px;
 }
 
 .description_group>h2 {
 	font-size: 1.1em;
 	text-transform: uppercase;
 	margin-bottom: 20px;
+}
+
+.description {
+	color: rgb(182, 181, 181);
+	font-style: italic;
+	margin-bottom: 30px;
 }
 
 .sentence {
@@ -115,7 +107,6 @@ a:focus, a:hover { color: #FFD900; }
 	width: 140px;
 	padding: 0 5px;
 	font-size: 1.2em;
-	font-weight: 500;
 	line-height: 1.1;
 	-webkit-transition: all 0.6s;
 	transition: all 0.6s;
@@ -148,8 +139,6 @@ a:focus, a:hover { color: #FFD900; }
 	top: 19px;
 	right: 25px;
 	color: #000;
-	font-weight: 900;
-	letter-spacing: 0;
 	padding-top: 1px;
 }
 

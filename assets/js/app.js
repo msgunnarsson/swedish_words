@@ -43,4 +43,15 @@ $(document).on('ready',function(){
 	prevLink.text(wantedPages[prevIndex].title).attr('href',wantedPages[prevIndex].url.slice(1));
 	nextLink.text(wantedPages[nextIndex].title).attr('href',wantedPages[nextIndex].url.slice(1));
 
+	// fetching background image with Flickr
+	var searchTerm = $('h2.swedish').text();
+	var flickrApi = '35b89464ff1274fa7a172348ef664a28';
+	var url = "http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=" + flickrApi + "&safe_search=1&extras=url_l&per_page=10&text=" + searchTerm;
+	
+	$.getJSON(url + "&format=json&jsoncallback=?", function(response) {
+        var randomIndex = Math.floor((Math.random()*10)+1);
+        var randomImageUrl = response.photos.photo[randomIndex].url_l;
+        console.log(randomImageUrl);
+        $("html").css('background-image', 'url('+ randomImageUrl +')');
+    });
 });
