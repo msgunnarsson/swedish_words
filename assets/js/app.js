@@ -44,7 +44,7 @@ $(document).on('ready',function(){
 	nextLink.text(wantedPages[nextIndex].title).attr('href',wantedPages[nextIndex].url.slice(1));
 
 	// fetching background image with Flickr
-/*	var searchTerm = $('.english').text();
+	var searchTerm = $('.english').text();
 	var flickrApi = '35b89464ff1274fa7a172348ef664a28';
 	var url = "http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=" + flickrApi + "&safe_search=1&extras=url_l&per_page=10&text=" + searchTerm;
 	
@@ -53,5 +53,5 @@ $(document).on('ready',function(){
         var randomImageUrl = response.photos.photo[randomIndex].url_l;
         console.log(randomImageUrl);
         $("html").css('background-image', 'url('+ randomImageUrl +')');
-    });*/
+    });
 });
