@@ -72,6 +72,9 @@ a:focus, a:hover { color: #FFD900; }
 	margin-bottom: 15px;
 }
 
+.pronunciation span {
+	display: block;
+}
 
 
 
