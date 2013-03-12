@@ -72,9 +72,27 @@ a:focus, a:hover { color: #FFD900; }
 	margin-bottom: 15px;
 }
 
+
+.pronunciation {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.pronunciation div:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.pronunciation p {
+	width: 25%;
+	float: left;
+	margin-right: 12.5%;
+}
+
+.pronunciation p:last-child {
+	margin-right: 0;
+}
+
 .pronunciation span {
 	display: block;
 	font-size: 1.8em;
+	font-style: normal;
 }
 
 
