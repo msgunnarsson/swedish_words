@@ -29,6 +29,7 @@ a:focus, a:hover { color: #FFD900; }
 
 .content { 
 	position: relative;
+	margin-bottom: 50px;
 }
 
 .content_box {
@@ -39,61 +40,63 @@ a:focus, a:hover { color: #FFD900; }
 	border-radius: 10px;	
 }
 
-.swedish {
-	font-size: 5em;
-	margin-bottom: 30px;
-}
+	.swedish {
+		font-size: 5em;
+		margin-bottom: 30px;
+	}
 
-.pron {
-	color: rgb(182, 181, 181);
-	font-style: italic;
-	margin-bottom: 30px;
-}
+	.pron {
+		color: rgb(182, 181, 181);
+		font-style: italic;
+		margin-bottom: 30px;
+	}
 
-.english { 
-	font-size: 1.8em; 
-	margin-bottom: 10px; 
-}
+	.english { 
+		font-size: 1.8em; 
+		margin-bottom: 10px; 
+	}
 
-.description_group>h2 {
-	font-size: 1.1em;
-	text-transform: uppercase;
-	margin-bottom: 20px;
-}
+	.description {
+		color: rgb(182, 181, 181);
+		font-style: italic;
+		margin-bottom: 30px;
+	}
 
-.description {
-	color: rgb(182, 181, 181);
-	font-style: italic;
-	margin-bottom: 30px;
-}
+		.description_group>h2, .pronunciation>h2 {
+			font-size: 1.1em;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
 
-.sentence {
-	font-style: normal;
-	margin-bottom: 15px;
-}
+			.sentence {
+				font-style: normal;
+				margin-bottom: 15px;
+			}
 
 
 .pronunciation {
 	padding-left: 40px;
 	padding-right: 40px;
 }
-.pronunciation div:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+	.pronunciation div:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 
-.pronunciation p {
-	width: 25%;
-	float: left;
-	margin-right: 12.5%;
-}
+		.pronunciation p {
+			width: 30%;
+			float: left;
+			margin-right: 5%;
 
-.pronunciation p:last-child {
-	margin-right: 0;
-}
+		}
 
-.pronunciation span {
-	display: block;
-	font-size: 1.8em;
-	font-style: normal;
-}
+			.pronunciation p:last-child {
+				margin-right: 0;
+			}
+
+		.pronunciation span {
+			display: block;
+			font-size: 1.8em;
+			font-style: normal;
+			color: #fff;
+		}
 
 
 
@@ -114,9 +117,9 @@ a:focus, a:hover { color: #FFD900; }
 	border-bottom-left-radius: 0;
 }
 
-#page_footer p { 
-	font-size: 0.8em;
-}
+	#page_footer p { 
+		font-size: 0.8em;
+	}
 
 
 .navigation a {
