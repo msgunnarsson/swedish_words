@@ -90,7 +90,7 @@ a:focus, a:hover { color: #FFD900; }
 				margin-right: 0;
 			}
 
-		.pronunciation span {
+		.letter {
 			display: block;
 			font-size: 1.8em;
 			font-style: normal;
