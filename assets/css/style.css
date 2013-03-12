@@ -79,7 +79,7 @@ a:focus, a:hover { color: #FFD900; }
 }
 	.pronunciation div:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 
-		.pronunciation p {
+		.pronunciation div>p {
 			width: 30%;
 			float: left;
 			margin-right: 5%;
