@@ -8,19 +8,17 @@ html {
 }
 
 body {
-	font: normal 300 1em/1.5 "museo", serif;
+	font: normal 1.1em/1.6 sans-serif;
 	color: #fff;
-	letter-spacing: 0.07em;
-	height: 100%;
-	max-width: 1024px;
-	margin: 0 auto;
 	position: relative;
+	margin: 0 auto;
 	height: 100%;
-	min-height: 1000px;
+	max-width: 1000px;
+	min-height: 1160px;
 }
 
-h1 { font-size: 3em; line-height: 1; font-weight: 900; margin: 0; }
-h2 { font-size: 1.5em; margin: 0 0 10px; }
+h1 { font-size: 2.4em; line-height: 1; margin: 0; }
+h2 { font-size: 1.5em; line-height: 1; margin: 0 0 10px; }
 p { margin: 0; }
 a { color: #fff; 
 	text-decoration: none; 
@@ -29,42 +27,92 @@ a { color: #fff;
 }
 a:focus, a:hover { color: #FFD900; }
 
-.swedish {
-	font-size: 6em;
-	font-weight: 900;
-	margin-bottom: 5px;
-	letter-spacing: 0.06em;
-}
-
-.english { 
-	font-size: 2em; 
-	font-weight: 900; 
-	letter-spacing: 0.08em; 
-	margin-bottom: 10px; 
-}
-
-.description {
-	color: rgb(182, 181, 181);
-	font-weight: 300;
-	font-style: italic;
-	margin-bottom: 30px;
-}
-
-.description_group p {
-	margin-bottom: 0;
-}
-
 .content { 
 	position: relative;
+	margin-bottom: 50px;
 }
 
 .content_box {
-	margin: 0 70px;
+	margin: 0 100px;
 	background: rgba(0, 0, 0, .8);
 	padding: 5% 12%;
 	text-align: center;
 	border-radius: 10px;	
 }
+
+	.swedish {
+		font-size: 5em;
+		margin-bottom: 30px;
+	}
+
+	.pron {
+		color: rgb(182, 181, 181);
+		font-style: italic;
+		margin-bottom: 30px;
+	}
+
+	.english { 
+		font-size: 1.8em; 
+		margin-bottom: 10px; 
+	}
+
+	.description {
+		color: rgb(182, 181, 181);
+		font-style: italic;
+		margin-bottom: 30px;
+	}
+
+		.description_group>h2 {
+			font-size: 1.1em;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+
+			.sentence {
+				font-style: normal;
+				margin-bottom: 15px;
+			}
+
+
+.pronunciation {
+	padding: 5% 40px 2%;
+}
+	.pronunciation div:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+		
+		.pronunciation hgroup {
+			margin-bottom: 20px;
+		}
+
+			.pronunciation>h2 {
+				font-size: 1.1em;
+				text-transform: uppercase;
+			}
+
+			.pronunciation>h3 {
+				font-size: 1.1em;
+				margin: 0;
+			}
+
+			.pronunciation p {
+				width: 30%;
+				float: left;
+				margin-right: 5%;
+				text-align: left;
+			}
+
+				.pronunciation p:last-child {
+					margin-right: 0;
+				}
+
+			.letter {
+				display: block;
+				font-size: 1.8em;
+				font-style: normal;
+				color: #fff;
+				text-align: center;
+			}
+
+
 
 #page_header.content_box {
 	border-top-left-radius: 0px;
@@ -83,9 +131,9 @@ a:focus, a:hover { color: #FFD900; }
 	border-bottom-left-radius: 0;
 }
 
-#page_footer p { 
-	font-size: 0.8em;
-}
+	#page_footer p { 
+		font-size: 0.8em;
+	}
 
 
 .navigation a {
@@ -97,8 +145,7 @@ a:focus, a:hover { color: #FFD900; }
 	height: 150px;
 	width: 140px;
 	padding: 0 5px;
-	font-size: 1.3em;
-	font-weight: 500;
+	font-size: 1.2em;
 	line-height: 1.1;
 	-webkit-transition: all 0.6s;
 	transition: all 0.6s;
@@ -131,8 +178,6 @@ a:focus, a:hover { color: #FFD900; }
 	top: 19px;
 	right: 25px;
 	color: #000;
-	font-weight: 900;
-	letter-spacing: 0;
 	padding-top: 1px;
 }
 
@@ -188,6 +233,10 @@ a:focus, a:hover { color: #FFD900; }
 }
 
 
+@media screen and (max-width: 1360px) {   /* Styles for tablet */
+.next { right: -10%; }
+.prev { left: -10%; }
+
 
 @media screen and (max-width: 989px) {   /* Styles for tablet */
 
@@ -195,7 +244,7 @@ body { font-size: 85%; min-height: 940px; }
 h1 { font-size: 200%; }
 .swedish { font-size: 450%;  }
 
-.navigation { position: relative; margin: 30px 70px; }
+.navigation { position: relative; margin: 30px 100px; }
 .navigation a { width: 110px; height: 120px; }
 .next { right: 18%; top: 0; }
 .prev { left: 18%; top: 0; }

@@ -1,0 +1,122 @@
+body {
+	font-family: 'omnes-pro', sans-serif;
+}
+
+h1, h2 {
+	font-weight: 500;
+}
+.swedish, {
+	font-weight: 700;
+}
+
+.english {
+	font-weight: 600;
+}
+
+.navigation a {
+	font-weight: 300;
+}
+
+
+body {
+	font-family: 'jubilat', sans-serif;
+	font-weight: 200;
+}
+
+h1 {
+	font-weight: 400;
+	letter-spacing: 0.04em;
+}
+
+h2 {
+	font-weight: 500;
+	letter-spacing: 0.05em;
+}
+
+.swedish, {
+	font-weight: 600;
+	letter-spacing: 0.02em;
+}
+
+.english {
+	font-weight: 500;
+	letter-spacing: 0.04em;
+}
+
+.description_group>h2 {
+	font-weight: 500;
+	letter-spacing: 0.1em;
+}
+
+.navigation a {
+	font-weight: 200;
+	letter-spacing: 0.05em;
+}
+
+#page_footer p {
+	font-size: 0.9em;
+}
+
+
+body {
+	font-family: 'proxima-nova', sans-serif;
+}
+
+h1 {
+	font-weight: 400;
+}
+
+h2 {
+	font-weight: 600;
+	letter-spacing: 0.05em;
+}
+
+.swedish, {
+	font-weight: 800;
+	letter-spacing: 0.03em;
+}
+
+.english {
+	font-weight: 600;
+	letter-spacing: 0.05em;
+}
+
+.description_group>h2 {
+	font-weight: 600;
+	letter-spacing: 0.06em;
+}
+
+.navigation a {
+	font-weight: 300;
+}
+
+
+body {
+	font-family: 'museo', sans-serif;
+	font-weight: 300;
+}
+
+h1 {
+	font-weight: 400;
+	letter-spacing: 0.04em;
+}
+
+h2 {
+	font-weight: 500;
+	letter-spacing: 0.05em;
+}
+
+.swedish, {
+	font-weight: 900;
+	letter-spacing: 0.04em;
+}
+
+.english {
+	font-weight: 700;
+	letter-spacing: 0.05em;
+}
+
+.description_group>h2 {
+	font-weight: 500;
+	letter-spacing: 0.1em;
+}
