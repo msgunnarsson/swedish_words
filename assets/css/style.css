@@ -75,8 +75,7 @@ a:focus, a:hover { color: #FFD900; }
 
 
 .pronunciation {
-	padding-left: 40px;
-	padding-right: 40px;
+	padding: 5% 40px 2%;
 }
 	.pronunciation div:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 
@@ -84,7 +83,7 @@ a:focus, a:hover { color: #FFD900; }
 			width: 30%;
 			float: left;
 			margin-right: 5%;
-
+			text-align: left;
 		}
 
 			.pronunciation p:last-child {
@@ -96,6 +95,7 @@ a:focus, a:hover { color: #FFD900; }
 			font-size: 1.8em;
 			font-style: normal;
 			color: #fff;
+			text-align: center;
 		}
 
 
