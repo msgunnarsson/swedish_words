@@ -62,7 +62,7 @@ a:focus, a:hover { color: #FFD900; }
 		margin-bottom: 30px;
 	}
 
-		.description_group>h2, .pronunciation>h2 {
+		.description_group>h2 {
 			font-size: 1.1em;
 			text-transform: uppercase;
 			margin-bottom: 20px;
@@ -78,25 +78,38 @@ a:focus, a:hover { color: #FFD900; }
 	padding: 5% 40px 2%;
 }
 	.pronunciation div:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
-
-		.pronunciation p {
-			width: 30%;
-			float: left;
-			margin-right: 5%;
-			text-align: left;
+		
+		.pronunciation hgroup {
+			margin-bottom: 20px;
 		}
 
-			.pronunciation p:last-child {
-				margin-right: 0;
+			.pronunciation>h2 {
+				font-size: 1.1em;
+				text-transform: uppercase;
 			}
 
-		.letter {
-			display: block;
-			font-size: 1.8em;
-			font-style: normal;
-			color: #fff;
-			text-align: center;
-		}
+			.pronunciation>h3 {
+				font-size: 1.1em;
+			}
+
+			.pronunciation p {
+				width: 30%;
+				float: left;
+				margin-right: 5%;
+				text-align: left;
+			}
+
+				.pronunciation p:last-child {
+					margin-right: 0;
+				}
+
+			.letter {
+				display: block;
+				font-size: 1.8em;
+				font-style: normal;
+				color: #fff;
+				text-align: center;
+			}
 
 
 
