@@ -44,11 +44,16 @@ a:focus, a:hover { color: #FFD900; }
 		margin-bottom: 30px;
 	}
 
-	.pron {
-		color: rgb(182, 181, 181);
-		font-style: italic;
+	.pron-wrapper {
 		margin-bottom: 30px;
 	}
+
+		.pron {
+			color: rgb(182, 181, 181);
+			display: inline;
+			font-style: italic;
+			margin-left: 36px;
+		}
 
 	.english { 
 		font-size: 1.8em; 
@@ -221,11 +226,9 @@ a:focus, a:hover { color: #FFD900; }
 	background: #fff url(../images/play.png) no-repeat 3px -1px;
 	width: 23px;
 	height: 22px;
+	margin-left: 12px;
 	border-radius: 11px;
-/*	position: absolute;
-	top: 0px;
-	right: -15px;
-*/	text-indent: -9999px;
+	text-indent: -9999px;
 	overflow: hidden;
 	cursor: pointer;
 }
