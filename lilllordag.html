@@ -7,7 +7,16 @@ font: omnes-pro, serif
 
 <section class="content content_box">
 	<h2 lang="sv" class="swedish">Lillördag</h2>
-	<p class="pron">[ lill loerdaag ]</p>
+	<div class="pron-wrapper">
+		<p class="pron">[ lill loerdaag ]</p>
+		<button id="player" title="Press play to hear the pronunciation.">Play</button>
+		<audio id="audio">
+			<source src="assets/audio/Mr. Leman - Sababa - Original Mix.mp3" type='audio/mp4'>
+			<source src="assets/audio/Mr. Leman - Sababa - Original Mix.mp3" type='audio/ogg; codecs=vorbis'> 
+			<!-- For Firefox, change audio type --> 
+			<p>Your user agent does not support the HTML5 Audio element.</p>
+		</audio>
+	</div>
 	<p class="english">Little Saturday</p>
 	<div class="description_group">
 		<p class="description">Lillördag is a nickname for Wednesday and means Little Saturday. It's a day for party and drinking but in a lighter way than Saturday. The word stems from the fact that Wednesday was the day all maids used to have time off, since they had to work on Saturdays.</p>

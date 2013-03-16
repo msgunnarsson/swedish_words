@@ -7,7 +7,16 @@ font: proxima-nova, serif
 
 <section class="content content_box">
 	<h2 lang="sv" class="swedish">Fika</h2>
-	<p class="pron">[ fee-ka ]</p>
+	<div class="pron-wrapper">
+		<p class="pron">[ fee-ka ]</p>
+		<button id="player" title="Press play to hear the pronunciation.">Play</button>
+		<audio id="audio">
+			<source src="assets/audio/Mr. Leman - Sababa - Original Mix.mp3" type='audio/mp4'>
+			<source src="assets/audio/Mr. Leman - Sababa - Original Mix.mp3" type='audio/ogg; codecs=vorbis'> 
+			<!-- For Firefox, change audio type --> 
+			<p>Your user agent does not support the HTML5 Audio element.</p>
+		</audio>
+	</div>
 	<p class="english">Fika</p>
 	<div class="description_group">
 		<p class="description">Fika is both a Swedish verb and noun that roughly means &ldquo;to drink coffee&rdquo;, usually accompanied by something sweet. Have a break, have a fika.</p>

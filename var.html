@@ -7,7 +7,17 @@ font: museo, serif
 
 <section class="content content_box">
 	<h2 lang="sv" class="swedish">Vår</h2>
-	<p class="pron">[ vaar ]</p>
+	<div class="pron-wrapper">
+		<p class="pron">[ vaar ]</p>
+		<button id="player" title="Press play to hear the pronunciation.">Play</button>
+		<audio id="audio">
+			<source src="assets/audio/Mr. Leman - Sababa - Original Mix.mp3" type='audio/mp4'>
+			<source src="assets/audio/Mr. Leman - Sababa - Original Mix.mp3" type='audio/ogg; codecs=vorbis'> 
+			<!-- For Firefox, change audio type --> 
+			<p>Your user agent does not support the HTML5 Audio element.</p>
+		</audio>
+	</div>
+	
 	<p class="english">Spring</p>
 	<div class="description_group">
 		<p class="description">Swedes will start their hunt for the first signs of vår as soon as the new year is upon them. It’s often a fruitless hunt way into March. But as soon as the first buds are on the trees and the first wood anemone spotted, and instagrammed, the sun starved Swedes will come running out of their triple glassed houses.</p>
