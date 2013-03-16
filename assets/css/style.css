@@ -211,6 +211,11 @@ a:focus, a:hover { color: #FFD900; }
 	border-radius: 20px 0;
 }
 */
+
+.pron-wrapper {
+	position: relative;
+}
+
 #player {
 	border: 0;
 	background: #fff url(../images/play.png) no-repeat 3px -1px;
@@ -218,8 +223,8 @@ a:focus, a:hover { color: #FFD900; }
 	height: 22px;
 	border-radius: 11px;
 	position: absolute;
-	top: 55px;
-	right: 25px;
+	top: 0px;
+	right: -15px;
 	text-indent: -9999px;
 	overflow: hidden;
 	cursor: pointer;
