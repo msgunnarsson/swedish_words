@@ -223,11 +223,11 @@ a:focus, a:hover { color: #FFD900; }
 
 #player {
 	border: 0;
-	background: #fff url(../images/hear.png) no-repeat 3px -1px;
-	width: 23px;
-	height: 22px;
+	background: #fff url(../images/hear.png) no-repeat 1px 0px;
+	width: 25px;
+	height: 25px;
 	margin-left: 12px;
-	border-radius: 11px;
+	border-radius: 13px;
 	text-indent: -9999px;
 	overflow: hidden;
 	cursor: pointer;
