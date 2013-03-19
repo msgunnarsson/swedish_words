@@ -1,10 +1,9 @@
 html {
-  	background: #fff url(/assets/images/kyckling_bg.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+  	background-color: #fff;
+  	background-position: center center; 
+	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100%;
+	background-attachment: fixed;
 }
 
 body {
