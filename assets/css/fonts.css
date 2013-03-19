@@ -1,122 +1,121 @@
-body {
+body.omnes {
 	font-family: 'omnes-pro', sans-serif;
 }
 
-h1, h2 {
-	font-weight: 500;
+body.omnes h1, body.omnes h2 {
+	font-weight: 600;
 }
-.swedish, {
+body.omnes .swedish, {
 	font-weight: 700;
 }
 
-.english {
+body.omnes .english {
 	font-weight: 600;
 }
 
-.navigation a {
+body.omnes .navigation a {
 	font-weight: 300;
 }
 
 
-body {
+body.jubilat {
 	font-family: 'jubilat', sans-serif;
 	font-weight: 200;
 }
 
-h1 {
+body.jubilat h1 {
 	font-weight: 400;
 	letter-spacing: 0.04em;
 }
 
-h2 {
+body.jubilat h2 {
 	font-weight: 500;
 	letter-spacing: 0.05em;
 }
 
-.swedish, {
+body.jubilat .swedish, {
 	font-weight: 600;
 	letter-spacing: 0.02em;
 }
 
-.english {
+body.jubilat .english {
 	font-weight: 500;
 	letter-spacing: 0.04em;
 }
 
-.description_group>h2 {
+body.jubilat .description_group>h2 {
 	font-weight: 500;
 	letter-spacing: 0.1em;
 }
 
-.navigation a {
+body.jubilat .navigation a {
 	font-weight: 200;
 	letter-spacing: 0.05em;
 }
 
-#page_footer p {
+body.jubilat #page_footer p {
 	font-size: 0.9em;
 }
 
 
-body {
+body.proxima {
 	font-family: 'proxima-nova', sans-serif;
 }
-
-h1 {
+body.proxima h1 {
 	font-weight: 400;
 }
 
-h2 {
+body.proxima h2 {
 	font-weight: 600;
 	letter-spacing: 0.05em;
 }
 
-.swedish, {
+body.proxima .swedish, {
 	font-weight: 800;
 	letter-spacing: 0.03em;
 }
 
-.english {
+body.proxima .english {
 	font-weight: 600;
 	letter-spacing: 0.05em;
 }
 
-.description_group>h2 {
+body.proxima .description_group>h2 {
 	font-weight: 600;
 	letter-spacing: 0.06em;
 }
 
-.navigation a {
+body.proxima .navigation a {
 	font-weight: 300;
 }
 
 
-body {
+body.museo {
 	font-family: 'museo', sans-serif;
 	font-weight: 300;
 }
 
-h1 {
+body.museo h1 {
 	font-weight: 300;
 	letter-spacing: 0.04em;
 }
 
-h2 {
+body.museo h2 {
 	font-weight: 500;
 	letter-spacing: 0.05em;
 }
 
-.swedish, {
+body.museo .swedish, {
 	font-weight: 900;
 	letter-spacing: 0.04em;
 }
 
-.english {
+body.museo .english {
 	font-weight: 700;
 	letter-spacing: 0.05em;
 }
 
-.description_group>h2 {
+body.museo .description_group>h2 {
 	font-weight: 500;
 	letter-spacing: 0.1em;
 }
