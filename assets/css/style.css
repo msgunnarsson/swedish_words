@@ -303,3 +303,19 @@ a:focus, a:hover { color: #FFD900; }
 			.next { right: 19px; }
 			.prev { left: 19px; }
 }
+
+@media screen and (max-width: 320px) {
+	.content_box { padding: 5% 10%; margin-right: 20px; margin-left: 20px; }
+		.pron { display: block; margin-left: 0; }
+		#player { margin-left: 0; margin-top: 10px; }
+		.description_group > h2 { line-height: 1.4; }
+		.navigation a { height: 68px; width: 58px; }
+			.prev, .next { top: 215px; }
+			.next { right: 5px; }
+			.prev { left: 5px; }
+}
+
+
+
+
+
