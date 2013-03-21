@@ -124,10 +124,7 @@ a:focus, a:hover { color: #FFD900; }
 
 
 #page_header.content_box {
-	border-top-left-radius: 0px;
-	border-top-right-radius: 0px;
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
+	border-radius: 0 0 10px 10px;
 	margin-bottom: 50px;
 }
 
@@ -225,7 +222,7 @@ a:focus, a:hover { color: #FFD900; }
 
 #player {
 	border: 0;
-	background: #fff url(../images/hear.png) no-repeat 1px 0px;
+	background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAA%2BCAYAAADeQLDtAAAAvElEQVR42u3XQQ2EMBAF0JFQCZWAhEpAwkpAQh0gAQlIWAlIqISV0P2HSYa0F6CZZJP9L%2FkhcOjPBDiMEP2fiGxIEgcBycgHqU3JikwyKCFFD69NSdLiQ26aT4e9dYLaldhkiz6b5YZ8pURTTyXZoQTs8OJVEkcmWS6WbM%2FeiUmayT6EriQgL6RohkVkb0pEiw67N8P%2FjF7dBSEiIiIi%2BtXF1DgupsZnMR2UWeKwmPYcFtOG32JquJgSPfcFZMKIfOe3aMAAAAAASUVORK5CYII%3D) no-repeat 1px 0px;
 	width: 25px;
 	height: 25px;
 	margin-left: 12px;
