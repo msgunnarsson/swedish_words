@@ -54,4 +54,5 @@ $(document).on('ready',function(){
         console.log(randomImageUrl);
         $("html").css('background-image', 'url('+ randomImageUrl +')');
     });*/
+
 });
