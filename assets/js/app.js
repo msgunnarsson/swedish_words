@@ -1,3 +1,7 @@
+var audiosources = function(json) {
+	$('#audio').prepend('<source src="'+json.items[0].pathmp3+'" type="audio/mp4"><source src="'+json.items[0].pathogg+'" type="audio/ogg; codecs=vorbis">');
+}
+
 $(document).on('ready',function(){
 
 /*	$('.navigation').buildNav();*/
@@ -42,7 +46,8 @@ $.fn.loadAudio = function(){
 	return this.each(function(){
 		var audio = $(this);
 		var button = $('#player');
-		var word = $('h2.swedish').text().toLowerCase();
+		var word = encodeURIComponent($('h2.swedish').text().toLowerCase());
+		var requestURL = 'http://apifree.forvo.com/key/15df09f4963d56498e03c97a8e5602e1/format/json/callback/audiosources/action/standard-pronunciation/word/'+word+'/language/sv';
 
 		var setButtonState = function(){
 			if (audio.get(0).paused) { 
@@ -53,15 +58,9 @@ $.fn.loadAudio = function(){
 		}
 
 		$.ajax({
-			url: 'http://apifree.forvo.com/key/15df09f4963d56498e03c97a8e5602e1/format/json/callback/loadaudio/action/standard-pronunciation/word/'+word+'/language/sv',
-			jsonpCallback: "loadaudio",
-			dataType: "jsonp",
-			type: "jsonp",
-			success: function (json) {
-				var mp3 = json.items[0].pathmp3;
-				var ogg = json.items[0].pathogg;
-				audio.prepend('<source src="'+mp3+'" type="audio/mp4"><source src="'+ogg+'" type="audio/ogg; codecs=vorbis">');
-			},
+			url: requestURL,
+			dataType: 'script',
+			cache: true,
 			error: function(){
 				console.error('Audio not available 😰');
 				audio.remove();
