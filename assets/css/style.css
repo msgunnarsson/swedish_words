@@ -292,7 +292,7 @@ a:focus, a:hover { color: #FFD900; }
 @media screen and (max-width: 470px) {
 	body { font-size: 90%; }
 		h1 { font-size: 160%; margin-top: 10px; }
-		.swedish { font-size: 330%; }
+		.swedish { font-size: 226%; }
 		.pronunciation hgroup { margin-top: 15px; }
 		.navigation a { height: 80px; width: 70px; }
 			.prev, .next { top: 210px; }
