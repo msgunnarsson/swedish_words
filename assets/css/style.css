@@ -38,6 +38,7 @@ a:focus, a:hover { color: #FFD900; }
 .three-col { width: 30%; float: left; margin-right: 5%; }
 .three-col:last-child { margin-right: 0; }
 
+.tweet-this { position: absolute; top: 0; left: 0; }
 
 /* Responsive Styles */
 
