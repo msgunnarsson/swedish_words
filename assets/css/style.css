@@ -38,7 +38,7 @@ a:focus, a:hover { color: #FFD900; }
 .three-col { width: 30%; float: left; margin-right: 5%; }
 .three-col:last-child { margin-right: 0; }
 
-.tweet-this { position: absolute; top: 0; left: 0; }
+.tweet-this { position: fixed; bottom: 7px; right: -20px; }
 
 /* Responsive Styles */
 
@@ -65,6 +65,7 @@ a:focus, a:hover { color: #FFD900; }
 		.prev, .next { top: 285px; }
 		.prev { left: 40px; }
 		.next { right: 40px; }
+	.tweet-this { position: static; text-align: center; margin-bottom: 20px; }
 }
 
 @media screen and (max-width: 890px) {

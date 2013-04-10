@@ -1,0 +1,121 @@
+body.omnes {
+	font-family: 'omnes-pro', sans-serif;
+}
+
+body.omnes h1, body.omnes h2 {
+	font-weight: 600;
+}
+body.omnes .swedish, {
+	font-weight: 700;
+}
+
+body.omnes .english {
+	font-weight: 600;
+}
+
+body.omnes .navigation a {
+	font-weight: 300;
+}
+
+
+body.jubilat {
+	font-family: 'jubilat', sans-serif;
+	font-weight: 200;
+}
+
+body.jubilat h1 {
+	font-weight: 400;
+	letter-spacing: 0.04em;
+}
+
+body.jubilat h2 {
+	font-weight: 500;
+	letter-spacing: 0.05em;
+}
+
+body.jubilat .swedish, {
+	font-weight: 600;
+	letter-spacing: 0.02em;
+}
+
+body.jubilat .english {
+	font-weight: 500;
+	letter-spacing: 0.04em;
+}
+
+body.jubilat .description_group>h2 {
+	font-weight: 500;
+	letter-spacing: 0.1em;
+}
+
+body.jubilat .navigation a {
+	font-weight: 200;
+	letter-spacing: 0.05em;
+}
+
+body.jubilat #page_footer p {
+	font-size: 0.9em;
+}
+
+
+body.proxima {
+	font-family: 'proxima-nova', sans-serif;
+}
+body.proxima h1 {
+	font-weight: 400;
+}
+
+body.proxima h2 {
+	font-weight: 600;
+	letter-spacing: 0.05em;
+}
+
+body.proxima .swedish, {
+	font-weight: 800;
+	letter-spacing: 0.03em;
+}
+
+body.proxima .english {
+	font-weight: 600;
+	letter-spacing: 0.05em;
+}
+
+body.proxima .description_group>h2 {
+	font-weight: 600;
+	letter-spacing: 0.06em;
+}
+
+body.proxima .navigation a {
+	font-weight: 300;
+}
+
+
+body.museo {
+	font-family: 'museo', sans-serif;
+	font-weight: 300;
+}
+
+body.museo h1 {
+	font-weight: 300;
+	letter-spacing: 0.04em;
+}
+
+body.museo h2 {
+	font-weight: 500;
+	letter-spacing: 0.05em;
+}
+
+body.museo .swedish, {
+	font-weight: 900;
+	letter-spacing: 0.04em;
+}
+
+body.museo .english {
+	font-weight: 700;
+	letter-spacing: 0.05em;
+}
+
+body.museo .description_group>h2 {
+	font-weight: 500;
+	letter-spacing: 0.1em;
+}
